@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    models:
+      post: 投稿
+    attributes:
+      post:
+        contents: 文章

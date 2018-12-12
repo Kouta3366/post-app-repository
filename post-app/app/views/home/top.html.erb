@@ -1,0 +1,14 @@
+<div class="container">
+  <% @posts.each do |post| %>
+    <div class="item">
+      <div class="item-box">
+        <div class="item-box-left">
+          <div class="item-box-left-name"><%= post.user.name %></div>
+        </div>
+        <div class="item-box-right">
+          <p class="item-box-right-contents"><%= post.contents %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

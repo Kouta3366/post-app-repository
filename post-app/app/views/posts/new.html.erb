@@ -1,0 +1,15 @@
+<div class="container">
+  <% @post.errors.full_messages.each do |message| %>
+    <div class="form-error">
+      <%= message %>
+    </div>
+  <% end %>
+  <%= form_tag("/posts/create") do%>
+    <div class="form">
+      <textarea name="contents"><%= @post.contents %></textarea>
+    </div>
+    <div class="login">
+      <input class="login2" type="submit" value="投稿">
+    </div>
+  <% end %>
+</div>
